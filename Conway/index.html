@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+	<div id="header">
+
+		<h1>John Conway's Game Of Life</h1>
+
+	</div>
+
+	<div id="Container">
+
+		<div id="CanvasDiv">
+			
+			<canvas id="canvas" width="1024" height="512"></canvas>
+
+		</div>
+
+		<div id="ButtonsDiv">
+			
+			<button id="stepbutton" onclick="stepClicked()">Step</button>
+
+			<button id="start" onclick="startClicked()">Start</button>
+
+			<button id="stop" onclick="stopClicked()">Stop</button>
+
+			<button id="clearbutton" onclick="clearClicked()">Clear</button>
+
+		</div>
+
+	</div>
+
+	<div id="TextAndSuch">
+		
+		<div id="Controls">
+			<h2>Controls:</h2>
+
+			<p>&emsp;&emsp;Click on a cell to toggle its dead/alive state.</p>
+			<p>&emsp;&emsp;Click Step to advance to the next generation.</p>
+			<p>&emsp;&emsp;Click Start to increase the generations automatically.</p>
+			<p>&emsp;&emsp;Click Stop to halt the automatic increase of generations.</p>
+			<p>&emsp;&emsp;Click Clear to clear the grid of cells.</p>
+		</div>
+		<div id="Rules">
+			<h2>Rules:</h2>
+
+			<p>&emsp;&emsp;Empty cells are considered dead, and colored ones are alive.</p>
+			<p>&emsp;&emsp;Any live cell with fewer than two live neighbours dies.</p>
+			<p>&emsp;&emsp;Any live cell with two or three live neighbours lives on to the next generation.</p>
+			<p>&emsp;&emsp;Any live cell with more than three live neighbours dies.</p>
+			<p>&emsp;&emsp;Any dead cell with exactly three live neighbours becomes a live cell.</p>
+		</div>
+
+
+	</div>
+
+	<div id="Footer">
+		
+		Website designed by Evan Veinotte
+
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
